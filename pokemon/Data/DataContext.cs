@@ -34,7 +34,7 @@ namespace Pokemon_review.Data
                     .HasForeignKey(c => c.CategoryId);
 
             modelBuilder.Entity<PokemonOwner>()
-                    .HasKey(po => new { po.PokemonId, po.OwnerId });
+                    .HasKey(po => new { po.PokemonId, po.OwnerId });   
             modelBuilder.Entity<PokemonOwner>()
                     .HasOne(p => p.Pokemon)
                     .WithMany(pc => pc.PokemonOwners)
