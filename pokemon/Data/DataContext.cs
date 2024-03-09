@@ -14,7 +14,7 @@ namespace Pokemon_review.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<Country> Countries { get; set; }
         public DbSet<Owner> Owners { get; set; }
-        public DbSet<pokemon> Pokemons { get; set; }
+        public DbSet<pokemon> Pokemon { get; set; }
         public DbSet<PokemonOwner> PokemonOwners { get; set; }
         public DbSet<PokemonCategory> PokemonCategories { get; set; }
         public DbSet<Review> Reviews { get; set; }
